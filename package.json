@@ -1,0 +1,41 @@
+{
+  "name": "cycle_app",
+  "version": "1.0.0",
+  "main": "./src/index.ts",
+  "type": "module",
+  "scripts": {
+    "generate": "prisma generate",
+    "dev": "nodemon --exec tsx src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexandre-BDT/cycle_app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexandre-BDT/cycle_app/issues"
+  },
+  "homepage": "https://github.com/alexandre-BDT/cycle_app#readme",
+  "description": "",
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/node": "^22.10.9",
+    "prisma": "^6.2.1",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.11.3",
+    "@graphql-tools/merge": "^9.0.17",
+    "@prisma/client": "^6.2.1",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "graphql": "^16.10.0",
+    "graphql-tag": "^2.12.6",
+    "http": "^0.0.1-security",
+    "nodemon": "^3.1.9",
+    "pg": "^8.13.1"
+  }
+}
