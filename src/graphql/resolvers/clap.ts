@@ -35,6 +35,18 @@ const clapResolvers = {
           },
         });
 
+        // IF COUNTER IS IN THE TODO TABLE
+        // await context.prisma.todo.update({
+        //   where: {
+        //     id: parseInt(todoId),
+        //   },
+        //   data: {
+        //     counter: {
+        //       increment: 1,
+        //     },
+        //   },
+        // });
+
         return clap;
       } catch (err) {
         console.error(err);

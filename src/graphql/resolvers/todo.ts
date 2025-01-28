@@ -22,7 +22,7 @@ const todoResolvers = {
         Object.assign(todo, {
           clapCounts: [...new Set(todo.clap.map((clap: { userId: number; }) => clap.userId))].map(userId => ({
             userId,
-            clapCount: todo.clap.filter((clap: { userId: unknown; }) => clap.userId === userId).length,
+            clapCount: todo.clap.filter((clap: { userId: number }) => clap.userId === userId).length,
           }))
         });
 
@@ -48,7 +48,7 @@ const todoResolvers = {
           Object.assign(todo, {
             clapCounts: [...new Set(todo.clap.map((clap: { userId: number; }) => clap.userId))].map(userId => ({
               userId,
-              clapCount: todo.clap.filter((clap: { userId: unknown; }) => clap.userId === userId).length,
+              clapCount: todo.clap.filter((clap: { userId: number }) => clap.userId === userId).length,
             }))
           });
           return todo;
